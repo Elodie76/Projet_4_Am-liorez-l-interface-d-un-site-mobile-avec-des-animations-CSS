@@ -12,6 +12,11 @@ a {
   text-decoration: none;
 }
 
+p {
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+}
+
 header {
   width: 100%;
   display: flex;
@@ -38,6 +43,22 @@ header .navbar .navbar__link {
   height: 30px;
 }
 
-.navbar__link {
+.info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+.info .info__location {
+  width: 100%;
+  background-color: #EAEAEA;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  padding: 15px 0px;
+}
+
+.navbar__link,
+.info__location-form {
   display: none;
 }

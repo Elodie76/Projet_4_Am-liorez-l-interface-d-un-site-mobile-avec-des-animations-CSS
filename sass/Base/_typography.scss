@@ -1,4 +1,8 @@
 // Fontfamilly
-$logo-and-title: "Shrikhand", serif ;
+@mixin logo-and-title {
+    font-family: "Shrikhand", serif;
+} 
 
-$text: "Roboto", sans-serif;
+@mixin text {
+    font-family: "Roboto", sans-serif;
+} 

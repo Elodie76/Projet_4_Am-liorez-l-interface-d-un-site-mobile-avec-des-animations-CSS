@@ -11,3 +11,33 @@ ol, ul {
 a {
   text-decoration: none;
 }
+
+header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+header .navbar {
+  position: absolute;
+  left: 0;
+  margin: 20px;
+}
+header .navbar .navbar__link {
+  color: rgb(70, 66, 66);
+}
+
+.fa-arrow-left {
+  font-size: 1.2rem;
+}
+
+.header__logo {
+  margin: 15px 0px;
+}
+.header__logo .header__logo--size {
+  height: 30px;
+}
+
+.navbar__link {
+  display: none;
+}

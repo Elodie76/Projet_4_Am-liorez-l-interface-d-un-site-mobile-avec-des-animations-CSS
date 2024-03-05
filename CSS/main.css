@@ -12,9 +12,18 @@ a {
   text-decoration: none;
 }
 
+h1, h2 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
 p {
   font-family: "Roboto", sans-serif;
-  font-size: 1rem;
+  font-weight: 700;
+  font-weight: 300;
+  font-size: 1.125rem;
 }
 
 header {
@@ -22,7 +31,7 @@ header {
   display: flex;
   justify-content: center;
   position: relative;
-  box-shadow: 0px 3px 5px rgb(195, 195, 195);
+  box-shadow: 0px 1px 5px rgb(195, 195, 195);
 }
 header .navbar {
   position: absolute;
@@ -59,13 +68,26 @@ header .navbar .navbar__link {
   padding: 15px 0px;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2509803922);
 }
-.info .info_reserver {
+.info .info__reserver {
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
   justify-content: center;
   background-color: #F6F6F6;
   margin-top: 6px;
+  padding: 30px 30px 40px 30px;
+}
+.info .info__reserver .info__reserver--marg {
+  margin-bottom: 30px;
+}
+.info .info__reserver .info_btn {
+  border-radius: 30px;
+  background: linear-gradient(#FF79DA, #9356DC);
+  padding: 20px;
+  color: #ffffff;
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2509803922);
 }
 
 .navbar__link,

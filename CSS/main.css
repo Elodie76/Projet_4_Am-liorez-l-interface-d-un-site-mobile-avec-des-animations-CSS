@@ -12,6 +12,22 @@ a {
   text-decoration: none;
 }
 
+.fa-solid--dark {
+  color: #353535;
+}
+
+.fa-solid--grey {
+  color: #7E7E7E;
+}
+
+.fa-solid--purple {
+  color: #9356DC;
+}
+
+.fa-solid--white {
+  color: #FFFFFF;
+}
+
 h1 {
   font-family: "Shrikhand", serif;
 }
@@ -31,10 +47,6 @@ p {
   font-size: 1.125rem;
 }
 
-.fa-solid {
-  color: #7E7E7E;
-}
-
 .Fonctionnement__card .Fonctionnement__card__card {
   display: flex;
 }
@@ -51,10 +63,6 @@ header .navbar {
   left: 0;
   margin: 20px;
 }
-header .navbar .navbar__link {
-  color: #353535;
-}
-
 .fa-arrow-left {
   font-size: 1.2rem;
 }
@@ -124,7 +132,8 @@ header .navbar .navbar__link {
   left: -15px;
   background-color: #9356DC;
   color: #ffffff;
-  border-radius: 50%;
+  -webkit-clip-path: circle();
+          clip-path: circle();
   padding: 5px 10px;
 }
 

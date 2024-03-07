@@ -26,6 +26,20 @@ p {
   font-size: 1.125rem;
 }
 
+.badge-nouveau {
+  background-color: #99E2D0;
+  font-size: 14px;
+  font-weight: 500;
+  color: #008766;
+  position: absolute;
+  padding: 5px 12px 5px 12px;
+  border-radius: 2px;
+}
+.badge-nouveau .badge-nouveau--txt {
+  font-size: 14px;
+  font-weight: 500;
+}
+
 header {
   width: 100%;
   display: flex;

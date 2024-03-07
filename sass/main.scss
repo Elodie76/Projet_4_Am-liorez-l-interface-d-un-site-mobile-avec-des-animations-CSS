@@ -14,11 +14,12 @@
     // Placeholders
 // Feuilles de style de tiers
     // Components
-    @import "./Components/fonctionnement-cards";
+    @import "./components/_badge-nouveau";
     // Layouts
     @import "./Layouts/header";
     @import "./Layouts/section-info";
+    @import "./Layouts/fonctionnement";
 
     // Pages
-    @import "./Pages/homepage"
+    @import "./Pages/homepage";
     // Themes

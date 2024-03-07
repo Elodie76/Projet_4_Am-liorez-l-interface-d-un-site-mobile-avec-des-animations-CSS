@@ -12,6 +12,22 @@ a {
   text-decoration: none;
 }
 
+.fa-solid--dark {
+  color: #353535;
+}
+
+.fa-solid--grey {
+  color: #7E7E7E;
+}
+
+.fa-solid--purple {
+  color: #9356DC;
+}
+
+.fa-solid--white {
+  color: #FFFFFF;
+}
+
 h1, h2 {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
@@ -102,6 +118,32 @@ header .navbar .navbar__link {
   padding: 20px;
   color: #ffffff;
   box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2509803922);
+}
+
+.Fonctionnement {
+  width: 100%;
+  padding: 0px 30px 30px 30px;
+}
+.Fonctionnement .Fonctionnement__card__card {
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 30px;
+  background-color: #F6F6F6;
+  padding: 30px;
+  border-radius: 30px;
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2509803922);
+}
+.Fonctionnement .tuto-nb {
+  position: absolute;
+  left: -15px;
+  background-color: #9356DC;
+  color: #ffffff;
+  -webkit-clip-path: circle();
+  clip-path: circle();
+  padding: 5px 10px;
 }
 
 .navbar__link,

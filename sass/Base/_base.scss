@@ -5,9 +5,23 @@ $color-tertiaire: #99E2D0;
 
 $bg: #F6F6F6;
 $bg-grey2: #EAEAEA;
+$bg-footer: #353535;
 
 $white-txt: #ffffff;
 
+// Icons color
+.fa-solid--dark{
+    color: #353535 ;
+}
+.fa-solid--grey{
+    color: #7E7E7E ;
+}
+.fa-solid--purple{
+    color: #9356DC ;
+}
+.fa-solid--white{
+    color: #FFFFFF ;
+}
 // Fonts
 $logo-and-title: "Shrikhand", serif;
 $text: "Roboto", sans-serif;

@@ -1,6 +1,5 @@
 .Fonctionnement {
-    width: 100%;
-    padding: 0px 30px 30px 30px;
+    @include container;
     .Fonctionnement__card__card {
     position: relative;
     display: flex;

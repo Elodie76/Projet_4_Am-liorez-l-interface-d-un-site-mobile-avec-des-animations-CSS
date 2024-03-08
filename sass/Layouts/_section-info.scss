@@ -1,9 +1,6 @@
 // section info
 .info{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
+    @include section;
     .info__location{
         width: 100%;
         background-color: $bg-grey2;
@@ -36,5 +33,7 @@
     }
     }
 }
-
+    .info_btn:hover{
+            opacity: 0.85;
+        }
 

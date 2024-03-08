@@ -32,6 +32,7 @@ h1, h2 {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 1.5rem;
+  margin-top: 30px;
   margin-bottom: 15px;
 }
 
@@ -118,6 +119,10 @@ header .navbar .navbar__link {
   padding: 20px;
   color: #ffffff;
   box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2509803922);
+}
+
+.info_btn:hover {
+  opacity: 0.85;
 }
 
 .Fonctionnement {

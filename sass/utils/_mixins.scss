@@ -1,0 +1,12 @@
+// mise en forme section info
+@mixin section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+// mise en forme section
+@mixin container{
+    width: 100%;
+    padding: 0px 30px 30px 30px;
+}

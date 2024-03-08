@@ -34,7 +34,8 @@ $text: "Roboto", sans-serif;
 
 h1,h2{
     @include titles;
-    font-size: 1.5rem;   
+    font-size: 1.5rem;  
+    margin-top: 30px; 
     margin-bottom: 15px;
 }
 

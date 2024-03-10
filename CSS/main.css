@@ -237,6 +237,25 @@ header .navbar {
   padding: 5px 10px;
 }
 
+.page-footer {
+  background-color: #353535;
+  padding: 20px;
+}
+.page-footer .page-footer__logo {
+  color: #ffffff;
+  font-family: "Shrikhand", serif;
+}
+.page-footer li {
+  padding-bottom: 6px;
+}
+.page-footer a {
+  color: #ffffff;
+  font-family: "Roboto", sans-serif;
+}
+.page-footer i {
+  width: 25px;
+}
+
 .navbar__link,
 .info__location-form {
   display: none;

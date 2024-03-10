@@ -1,0 +1,21 @@
+// footer
+.page-footer{
+    background-color: $bg-footer;
+    padding: 20px;
+    .page-footer__logo{
+        color: $white-txt;
+        font-family: $logo-and-title;       
+    }
+    li{
+        padding-bottom: 6px;
+    
+    }
+    a{
+        color: $white-txt;
+        font-family: $text; 
+        
+    }
+    i{
+        width: 25px;   
+    }    
+}

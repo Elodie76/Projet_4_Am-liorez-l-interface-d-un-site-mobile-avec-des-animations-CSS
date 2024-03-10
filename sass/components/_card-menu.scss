@@ -6,10 +6,12 @@
         background-color: $bg-card;
         border-radius: 25px;
         margin-bottom: 20px;
+       
         
     img{
-        max-height: 231px;
         width: 100%;
+        height: 231px;
+        object-fit: cover;       
         border-radius: 20px 20px 0px 0px;
     }
     
@@ -25,16 +27,16 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px;
+    padding: 15px;
 }
 .card-content__heart{
     position: relative;    
     height: 30px;
     width: 30px;
 }
+
+
 // heart animation
-
-
 .fa-heart{
     font-size: 22px;
     position: absolute;

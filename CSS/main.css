@@ -28,6 +28,10 @@ a {
   color: #FFFFFF;
 }
 
+h1 {
+  font-family: "Shrikhand", serif;
+}
+
 h2 {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
@@ -127,7 +131,8 @@ header {
 }
 header .navbar {
   position: absolute;
-  left: 0;
+  left: 0.25rem;
+  bottom: 0.25rem;
   margin: 20px;
 }
 
@@ -227,7 +232,6 @@ header .navbar {
   width: 25px;
 }
 
-.navbar__link,
 .info__location-form {
   display: none;
 }

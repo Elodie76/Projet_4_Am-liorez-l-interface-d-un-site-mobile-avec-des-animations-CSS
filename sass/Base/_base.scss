@@ -31,6 +31,9 @@ $text: "Roboto", sans-serif;
 
 
 // section title
+h1{
+    font-family: $logo-and-title;
+}
 h2{
     font-family: $text;
     font-weight: 700;

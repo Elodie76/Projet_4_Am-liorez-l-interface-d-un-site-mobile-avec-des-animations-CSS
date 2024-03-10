@@ -28,17 +28,20 @@ a {
   color: #FFFFFF;
 }
 
-h1, h2 {
+h2 {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 1.5rem;
-  margin-top: 30px;
   margin-bottom: 15px;
 }
 
-p {
+h3 {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
+  font-size: 1.125rem;
+}
+
+p {
   font-weight: 300;
   font-size: 1.125rem;
 }
@@ -57,6 +60,62 @@ p {
   font-weight: 500;
 }
 
+.restaurants_cards {
+  width: 100%;
+  padding: 50px 30px 35px 30px;
+  background-color: #F6F6F6;
+}
+.restaurants_cards .restaurants_cards__cards {
+  background-color: #FFFFFF;
+  border-radius: 25px;
+  margin-bottom: 20px;
+}
+.restaurants_cards .restaurants_cards__cards img {
+  max-height: 231px;
+  width: 100%;
+  border-radius: 20px 20px 0px 0px;
+}
+
+.a--color {
+  color: black;
+}
+
+.card-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.card-content__heart {
+  position: relative;
+  height: 30px;
+  width: 30px;
+}
+
+.fa-heart {
+  font-size: 22px;
+  position: absolute;
+  left: -2;
+}
+
+.heart-empty {
+  margin-right: 10px;
+}
+
+.heart-full {
+  opacity: 0;
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  margin-right: 10px;
+  background-image: linear-gradient(#9356DC, #FF79DA);
+}
+
+.heart-full:active {
+  opacity: 1;
+}
+
 header {
   width: 100%;
   display: flex;
@@ -68,9 +127,6 @@ header .navbar {
   position: absolute;
   left: 0;
   margin: 20px;
-}
-header .navbar .navbar__link {
-  color: rgb(70, 66, 66);
 }
 
 .fa-arrow-left {
@@ -127,7 +183,7 @@ header .navbar .navbar__link {
 
 .Fonctionnement {
   width: 100%;
-  padding: 0px 30px 30px 30px;
+  padding: 50px 30px 35px 30px;
 }
 .Fonctionnement .Fonctionnement__card__card {
   position: relative;

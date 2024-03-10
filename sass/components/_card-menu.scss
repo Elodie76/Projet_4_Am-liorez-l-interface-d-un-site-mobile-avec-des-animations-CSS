@@ -1,0 +1,62 @@
+.restaurants_cards{
+    @include container;
+    background-color: $bg;
+    .restaurants_cards__cards{
+        
+        background-color: $bg-card;
+        border-radius: 25px;
+        margin-bottom: 20px;
+        
+    img{
+        max-height: 231px;
+        width: 100%;
+        border-radius: 20px 20px 0px 0px;
+    }
+    
+        
+}
+}
+.a--color{
+        color: black ;
+        }
+    
+.card-content{
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+.card-content__heart{
+    position: relative;    
+    height: 30px;
+    width: 30px;
+}
+// heart animation
+
+
+.fa-heart{
+    font-size: 22px;
+    position: absolute;
+    left: -2;   
+}
+
+.heart-empty{
+    margin-right: 10px;
+}
+
+.heart-full{
+    opacity: 0;
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    margin-right: 10px;
+    background-image: linear-gradient($color-primaire,$color-secondaire);
+    
+}
+.heart-full:active{
+    opacity: 1;
+    
+    
+}
+    

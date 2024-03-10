@@ -1,6 +1,5 @@
 .Fonctionnement {
-    width: 100%;
-    padding: 0px 30px 30px 30px;
+    @include container;
     .Fonctionnement__card__card {
     position: relative;
     display: flex;
@@ -18,8 +17,7 @@
     left: -15px;
     background-color: #9356DC;
     color: #ffffff;
-    -webkit-clip-path: circle();
-            clip-path: circle();
+    border-radius: 50px;
     padding: 5px 10px;
   }
   

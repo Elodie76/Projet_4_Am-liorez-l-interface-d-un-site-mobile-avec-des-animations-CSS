@@ -28,21 +28,21 @@ a {
   color: #FFFFFF;
 }
 
-h1 {
-  font-family: "Shrikhand", serif;
-}
-
 h2 {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 1.5rem;
-  margin-bottom: 30px;
-  margin-top: 50px;
+  margin-bottom: 15px;
+}
+
+h3 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 1.125rem;
+  margin-bottom: 5px;
 }
 
 p {
-  font-family: "Roboto", sans-serif;
-  font-weight: 700;
   font-weight: 300;
   font-size: 1.125rem;
 }
@@ -61,6 +61,63 @@ p {
   font-weight: 500;
 }
 
+.restaurants_cards {
+  width: 100%;
+  padding: 50px 30px 35px 30px;
+  background-color: #F6F6F6;
+}
+.restaurants_cards .restaurants_cards__cards {
+  background-color: #FFFFFF;
+  border-radius: 25px;
+  margin-bottom: 20px;
+}
+.restaurants_cards .restaurants_cards__cards img {
+  width: 100%;
+  height: 231px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 20px 20px 0px 0px;
+}
+
+.a--color {
+  color: black;
+}
+
+.card-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+}
+
+.card-content__heart {
+  position: relative;
+  height: 30px;
+  width: 30px;
+}
+
+.fa-heart {
+  font-size: 22px;
+  position: absolute;
+}
+
+.heart-empty {
+  margin-right: 10px;
+}
+
+.heart-full {
+  opacity: 0;
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  margin-right: 10px;
+  background-image: linear-gradient(#9356DC, #FF79DA);
+}
+
+.heart-full:active {
+  opacity: 1;
+}
+
 header {
   width: 100%;
   display: flex;
@@ -73,6 +130,7 @@ header .navbar {
   left: 0;
   margin: 20px;
 }
+
 .fa-arrow-left {
   font-size: 1.2rem;
 }
@@ -137,6 +195,9 @@ header .navbar {
   border-radius: 30px;
   box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2509803922);
 }
+.Fonctionnement .Fonctionnement__card .Fonctionnement__card__card .info_btn:hover {
+  opacity: 0.85;
+}
 .Fonctionnement .Fonctionnement__card .Fonctionnement__card__card .tuto-nb {
   position: absolute;
   left: -15px;
@@ -153,7 +214,7 @@ header .navbar {
 
 .Fonctionnement {
   width: 100%;
-  padding: 0px 30px 30px 30px;
+  padding: 50px 30px 35px 30px;
 }
 .Fonctionnement .Fonctionnement__card__card {
   position: relative;
@@ -172,12 +233,19 @@ header .navbar {
   left: -15px;
   background-color: #9356DC;
   color: #ffffff;
-  -webkit-clip-path: circle();
-  clip-path: circle();
+  border-radius: 50px;
   padding: 5px 10px;
 }
 
 .navbar__link,
 .info__location-form {
   display: none;
+}
+
+.restaurants_cards__cards {
+  position: relative;
+}
+.restaurants_cards__cards .badge-nouveau {
+  top: 1rem;
+  right: 1rem;
 }

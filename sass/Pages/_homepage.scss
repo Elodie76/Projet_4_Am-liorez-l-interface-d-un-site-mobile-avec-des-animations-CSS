@@ -4,4 +4,13 @@
     display: none;
 
 }
+// position badge nouveau
+.restaurants_cards__cards{
+    position: relative;
+    .badge-nouveau{
+        top: 1rem;
+        right: 1rem;
+    }
+}
+
 

@@ -6,6 +6,7 @@ $color-tertiaire: #99E2D0;
 $bg: #F6F6F6;
 $bg-grey2: #EAEAEA;
 $bg-footer: #353535;
+$bg-card:#FFFFFF;
 
 $white-txt: #ffffff;
 
@@ -26,26 +27,31 @@ $white-txt: #ffffff;
 $logo-and-title: "Shrikhand", serif;
 $text: "Roboto", sans-serif;
 
+// Fonts
 
-@mixin titles {
+
+// section title
+h2{
     font-family: $text;
     font-weight: 700;
+    font-size: 1.5rem;  
+     
+    margin-bottom: 15px;
 }
 
-h1{
-    font-family: $logo-and-title;
-}
-h2{
-    @include titles;
-    font-size: 1.5rem;   
-    margin-bottom: 30px;
-    margin-top: 50px;
+h3{
+    font-family: $text;
+    font-weight: 700;
+    font-size: 1.125rem; 
+    margin-bottom: 5px;
 }
 
 p{
-    @include titles;
+    
     font-weight: 300;
     font-size: 1.125rem;  
 }
+
+
 
 

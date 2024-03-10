@@ -8,6 +8,9 @@
 // mise en forme section
 @mixin container{
     width: 100%;
-    padding: 50px 30px 35px 30px;
+    padding: 50px 20px 35px 20px;
     
+}
+@mixin box-shadow{
+    box-shadow: 0 4px 4px 0 #00000040 ;
 }

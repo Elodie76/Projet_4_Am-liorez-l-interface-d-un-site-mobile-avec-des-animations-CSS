@@ -56,11 +56,12 @@
     -webkit-background-clip: text;
     margin-right: 10px;
     background-image: linear-gradient($color-primaire,$color-secondaire);
-    
+    &:hover{
+         opacity: 1;
+     }
+    &:active{
+        opacity: 1;
+    }
 }
-.heart-full:active{
-    opacity: 1;
-    
-    
-}
+
     

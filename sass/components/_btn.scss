@@ -1,0 +1,26 @@
+
+.btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    background: linear-gradient($color-secondaire, $color-primaire);
+    padding: 30px;
+    
+    
+    color: $white-txt;
+    @include box-shadow;
+    height: 50px;
+    .btn--txt{
+        font-weight: 500; 
+        font-family: $text;
+        font-size: 1rem;
+    }
+}
+.btn:hover{
+    opacity: 0.85;
+}
+// bouton commander
+.btn--commander{
+    padding: 0px 50px;
+}

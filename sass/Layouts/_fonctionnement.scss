@@ -12,6 +12,13 @@
     border-radius: 30px;
     box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2509803922);
   }
+  .Fonctionnement__card__card:hover{
+    i{
+      color: $color-primaire;
+    }
+  }
+    
+    
     .tuto-nb {
     position: absolute;
     left: -15px;

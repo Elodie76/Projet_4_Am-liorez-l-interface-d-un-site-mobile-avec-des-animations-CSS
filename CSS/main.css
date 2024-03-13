@@ -286,6 +286,7 @@ header .navbar {
 .page-footer .page-footer__logo {
   color: #ffffff;
   font-family: "Shrikhand", serif;
+  font-weight: 400;
 }
 .page-footer li {
   padding-bottom: 6px;

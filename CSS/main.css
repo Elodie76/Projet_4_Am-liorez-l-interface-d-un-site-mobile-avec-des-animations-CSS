@@ -59,7 +59,7 @@ p {
   background: linear-gradient(#FF79DA, #9356DC);
   padding: 30px;
   color: #ffffff;
-  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2509803922);
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
   height: 50px;
 }
 .btn .btn--txt {
@@ -91,12 +91,12 @@ p {
 }
 
 .card-choice {
-  background-color: #FFFFFF;
+  background-color: rgb(255, 255, 255);
   border-radius: 15px;
   display: flex;
   justify-content: space-between;
   padding: 10px 16px 5px 16px;
-  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2509803922);
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
 }
 .card-choice .card-choice__content h4, .card-choice .card-choice__content p {
   margin-bottom: 5px;
@@ -120,11 +120,11 @@ p {
 .restaurants_cards {
   width: 100%;
   padding: 50px 20px 35px 20px;
-  background-color: #F6F6F6;
+  background-color: rgb(246, 246, 246);
 }
 .restaurants_cards .restaurants_cards__cards {
   height: 251px;
-  background-color: #FFFFFF;
+  background-color: rgb(255, 255, 255);
   border-radius: 25px;
   margin-bottom: 20px;
 }
@@ -226,7 +226,7 @@ header .navbar {
   align-items: center;
   text-align: center;
   justify-content: center;
-  background-color: #F6F6F6;
+  background-color: rgb(246, 246, 246);
   margin-top: 6px;
   padding: 30px 30px 40px 30px;
 }
@@ -249,18 +249,26 @@ header .navbar {
 .Fonctionnement {
   width: 100%;
   padding: 50px 20px 35px 20px;
+  background-color: rgb(255, 255, 255);
 }
-.Fonctionnement .Fonctionnement__card__card {
+.Fonctionnement .Fonctionnement__cards {
+  padding-left: 15px;
+}
+.Fonctionnement .Fonctionnement__cards .Fonctionnement__card__card {
   position: relative;
   display: flex;
   justify-content: flex-start;
   align-items: center;
   gap: 20px;
   margin-bottom: 30px;
-  background-color: #F6F6F6;
+  background-color: rgb(246, 246, 246);
   padding: 30px;
-  border-radius: 30px;
-  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2509803922);
+  border-radius: 20px;
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+}
+.Fonctionnement .Fonctionnement__cards .Fonctionnement__card__card i {
+  font-size: 1.125rem;
+  height: 25px;
 }
 .Fonctionnement .Fonctionnement__card__card:hover i {
   color: #9356DC;
@@ -335,7 +343,7 @@ body .main-container .menu-container {
   align-items: center;
   gap: 40px;
   border-radius: 50px 50px 0px 0px;
-  background-color: #F6F6F6;
+  background-color: rgb(246, 246, 246);
   padding: 0px 15px 40px 15px;
 }
 body .main-container .menu-container .Restaurant-title {

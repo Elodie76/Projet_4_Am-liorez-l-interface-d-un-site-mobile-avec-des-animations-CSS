@@ -341,6 +341,7 @@ body .main-container .menu-container {
 body .main-container .menu-container .Restaurant-title {
   display: flex;
   justify-content: space-between;
+  width: 100%;
   margin: 40px 0px 20px 0px;
 }
 body .main-container .menu-container .Restaurant-title h2, body .main-container .menu-container .Restaurant-title .menu-title-heart {
@@ -348,6 +349,7 @@ body .main-container .menu-container .Restaurant-title h2, body .main-container 
 }
 body .main-container .menu-container .Restaurant-title h2 {
   font-family: "Shrikhand", serif;
+  font-weight: 400;
 }
 body .main-container .menu-container .Restaurant-title .card-content__heart {
   padding-top: 0.4rem;

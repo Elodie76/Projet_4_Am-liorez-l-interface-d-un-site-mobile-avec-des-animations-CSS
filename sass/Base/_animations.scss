@@ -1,0 +1,48 @@
+// Animation au survol, ajout d'un plat a la commande
+
+.bloc-price-coche{
+    display: flex;
+    flex-direction: row;
+    transition: transform 330ms ease-in-out;
+    .card-choice__price{
+    transform: translate(51px,0);
+    transition: transform 900ms;
+    }
+
+    .coche-plat{
+        width: 59px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: $color-tertiaire;
+        border-radius: 0px 15px 15px 0px;
+        transform: scaleX(0);
+        transition: transform 900ms;
+        transform-origin: 100% 50%;
+
+
+    i{
+
+        border-radius: 50%;
+        background-color: white;
+        color: $color-tertiaire;
+        padding: 4px 4px 4px 4px;
+        font-size: 0.7rem;
+    }
+
+
+}
+ }
+.card-choice:hover{
+    & > .bloc-price-coche{
+       & > .coche-plat{
+        transform: scaleX(1);
+        
+    } 
+        & > .card-choice__price{
+            transform: translate(0px,0)
+        }
+    }
+    
+}
+   

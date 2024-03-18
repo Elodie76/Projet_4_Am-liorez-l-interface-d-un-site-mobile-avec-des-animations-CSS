@@ -5,9 +5,10 @@
     display: flex;
     justify-content: space-between;
     
-    padding: 10px 16px 5px 16px;
+    // padding: 10px 16px 5px 16px;
     @include box-shadow;
     .card-choice__content{
+        padding: 10px 0px 5px 16px;
         h4,p{
             margin-bottom: 5px;
             font-family: $text;
@@ -20,8 +21,9 @@
         }
     }
     .card-choice__price{
-        margin-top: 1.4rem;
-        margin-right: 0.2rem;
+        display: flex;
+        flex-direction: column-reverse;
+        padding: 0px 10px 5px 0px;
         p{
         font-family: $text;
         font-weight: 700;

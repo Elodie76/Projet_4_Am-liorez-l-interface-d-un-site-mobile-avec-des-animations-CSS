@@ -51,6 +51,41 @@ p {
   font-size: 1.125rem;
 }
 
+.bloc-price-coche {
+  display: flex;
+  flex-direction: row;
+  transition: transform 330ms ease-in-out;
+}
+.bloc-price-coche .card-choice__price {
+  transform: translate(51px, 0);
+  transition: transform 900ms;
+}
+.bloc-price-coche .coche-plat {
+  width: 59px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #99E2D0;
+  border-radius: 0px 15px 15px 0px;
+  transform: scaleX(0);
+  transition: transform 900ms;
+  transform-origin: 100% 50%;
+}
+.bloc-price-coche .coche-plat i {
+  border-radius: 50%;
+  background-color: white;
+  color: #99E2D0;
+  padding: 4px 4px 4px 4px;
+  font-size: 0.7rem;
+}
+
+.card-choice:hover > .bloc-price-coche > .coche-plat {
+  transform: scaleX(1);
+}
+.card-choice:hover > .bloc-price-coche > .card-choice__price {
+  transform: translate(0px, 0);
+}
+
 .btn {
   display: flex;
   justify-content: center;
@@ -95,8 +130,10 @@ p {
   border-radius: 15px;
   display: flex;
   justify-content: space-between;
-  padding: 10px 16px 5px 16px;
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+}
+.card-choice .card-choice__content {
+  padding: 10px 0px 5px 16px;
 }
 .card-choice .card-choice__content h4, .card-choice .card-choice__content p {
   margin-bottom: 5px;
@@ -109,8 +146,9 @@ p {
   font-size: 0.925rem;
 }
 .card-choice .card-choice__price {
-  margin-top: 1.4rem;
-  margin-right: 0.2rem;
+  display: flex;
+  flex-direction: column-reverse;
+  padding: 0px 10px 5px 0px;
 }
 .card-choice .card-choice__price p {
   font-family: "Roboto", sans-serif;

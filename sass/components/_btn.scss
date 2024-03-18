@@ -9,7 +9,7 @@
     
     
     color: $white-txt;
-    @include box-shadow;
+    @include btn-box-shadow;
     height: 50px;
     .btn--txt{
         font-weight: 500; 

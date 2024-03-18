@@ -11,6 +11,11 @@
     padding: 50px 20px 35px 20px;
     
 }
+// ombre des cards
 @mixin box-shadow{
     box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15) ;
+}
+// ombre des boutons
+@mixin btn-box-shadow{
+    box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.15) ;
 }

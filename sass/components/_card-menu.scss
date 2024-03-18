@@ -4,14 +4,23 @@
     border-radius: 15px;
     display: flex;
     justify-content: space-between;
+    width: 100%;
     
     // padding: 10px 16px 5px 16px;
     @include box-shadow;
     .card-choice__content{
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        width: 100%;
+        max-width: 80%;
         padding: 10px 0px 5px 16px;
         h4,p{
             margin-bottom: 5px;
             font-family: $text;
+           
+            }
+            
         }
         h4{
             font-size: 1.025rem;
@@ -19,7 +28,10 @@
         p{
             font-size: 0.925rem;
         }
-    }
+
+  
+        }
+    
     .card-choice__price{
         display: flex;
         flex-direction: column-reverse;
@@ -31,5 +43,5 @@
     }   
         }
        
-}
+
 

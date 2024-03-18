@@ -86,6 +86,47 @@ p {
   transform: translate(0px, 0);
 }
 
+@keyframes apparition {
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+.Restaurant-title > h2 {
+  opacity: 0;
+  transform: translateY(-30px);
+  animation: apparition 0.1s 0.8s ease-out forwards;
+}
+
+.meals > h3 {
+  opacity: 0;
+  transform: translateY(-30px);
+  animation: apparition 0.5s 1s ease-out forwards;
+}
+
+.meals > article:nth-child(2) {
+  opacity: 0;
+  transform: translateY(-30px);
+  animation: apparition 0.8s 1.4s ease-out forwards;
+}
+.meals > article:nth-child(3) {
+  opacity: 0;
+  transform: translateY(-30px);
+  animation: apparition 0.8s 1.7s ease-out forwards;
+}
+.meals > article:nth-child(4) {
+  opacity: 0;
+  transform: translateY(-30px);
+  animation: apparition 0.8s 2s ease-out forwards;
+}
+.meals > article:nth-child(5) {
+  opacity: 0;
+  transform: translateY(-30px);
+  animation: apparition 0.8s 2.3s ease-out forwards;
+}
+
+/* Style pour tablettes */
+/* Style pour ordinateurs de bureau */
 .btn {
   display: flex;
   justify-content: center;
@@ -94,7 +135,7 @@ p {
   background: linear-gradient(#FF79DA, #9356DC);
   padding: 30px;
   color: #ffffff;
-  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.15);
   height: 50px;
 }
 .btn .btn--txt {
@@ -130,27 +171,34 @@ p {
   border-radius: 15px;
   display: flex;
   justify-content: space-between;
+  width: 100%;
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
 }
 .card-choice .card-choice__content {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 100%;
+  max-width: 80%;
   padding: 10px 0px 5px 16px;
 }
 .card-choice .card-choice__content h4, .card-choice .card-choice__content p {
   margin-bottom: 5px;
   font-family: "Roboto", sans-serif;
 }
-.card-choice .card-choice__content h4 {
+.card-choice h4 {
   font-size: 1.025rem;
 }
-.card-choice .card-choice__content p {
+.card-choice p {
   font-size: 0.925rem;
 }
-.card-choice .card-choice__price {
+
+.card-choice__price {
   display: flex;
   flex-direction: column-reverse;
   padding: 0px 10px 5px 0px;
 }
-.card-choice .card-choice__price p {
+.card-choice__price p {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
 }

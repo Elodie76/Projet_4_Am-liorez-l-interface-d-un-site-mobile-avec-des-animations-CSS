@@ -46,3 +46,45 @@
     
 }
    
+// apparition des menus en décalé
+@keyframes apparition{
+    100%{
+        opacity: 1;
+        transform: none;
+    }
+}
+.Restaurant-title > h2{
+    opacity: 0;
+    transform: translateY(-30px);
+    animation: apparition 0.1s 0.8s ease-out forwards;
+    }
+
+.meals{
+    & > h3{
+        opacity: 0;
+        transform: translateY(-30px);
+        animation: apparition 0.5s 1.0s ease-out forwards;
+    }
+}
+.meals{
+    & > article:nth-child(2){
+        opacity: 0;
+        transform: translateY(-30px);
+        animation: apparition 0.8s 1.4s ease-out forwards;
+    }
+    & > article:nth-child(3){
+        opacity: 0;
+        transform: translateY(-30px);
+        animation: apparition 0.8s 1.7s ease-out forwards;
+    }
+    & > article:nth-child(4){
+        opacity: 0;
+        transform: translateY(-30px);
+        animation: apparition 0.8s 2.0s ease-out forwards;
+    }
+    & > article:nth-child(5){
+        opacity: 0;
+        transform: translateY(-30px);
+        animation: apparition 0.8s 2.3s ease-out forwards;
+    }
+}

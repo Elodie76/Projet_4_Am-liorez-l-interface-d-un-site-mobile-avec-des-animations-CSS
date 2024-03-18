@@ -3,10 +3,10 @@ $color-primaire: #9356DC;
 $color-secondaire: #FF79DA;
 $color-tertiaire: #99E2D0;
 
-$bg: #F6F6F6;
+$bg: rgba(246, 246, 246, 1);
 $bg-grey2: #EAEAEA;
 $bg-footer: #353535;
-$bg-card:#FFFFFF;
+$bg-card:rgba(255, 255, 255, 1);
 
 $white-txt: #ffffff;
 
@@ -31,6 +31,9 @@ $text: "Roboto", sans-serif;
 
 
 // section title
+h1{
+    font-family: $logo-and-title;
+}
 h2{
     font-family: $text;
     font-weight: 700;

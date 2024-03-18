@@ -5,5 +5,33 @@
 
 /* Style pour ordinateurs de bureau */
 @media (min-width: 1024px) {
-   
+
+
+  .info__reserver{
+    .info__reserver--marg{
+      h2{
+      color: green;
+      font-size: 2.5rem;
+    }
   }
+ }
+
+
+   .Fonctionnement{
+    
+    
+    &__cards{
+      max-width: 1024px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      
+    }
+   } 
+   .desktop-wrap {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Crée deux colonnes de taille égale */
+    grid-gap: 100px; /* Espacement entre les articles */
+    max-width: 1080px;
+  }
+}

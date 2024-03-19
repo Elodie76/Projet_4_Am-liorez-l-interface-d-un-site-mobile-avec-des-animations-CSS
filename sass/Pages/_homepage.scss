@@ -1,11 +1,21 @@
-
-.info__location-form{    // location form hidden
-    display: none;
-
-}
 // position badge nouveau
+.restaurants_cards{
+    @media (min-width: 1024px){
+        padding-left: 150px;
+        padding-right: 150px;
+    }
+}
+.desktop-wrap{
+    @media (min-width: 1024px){
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 90px;
+        row-gap: 25px;
+    }
+}
 .restaurants_cards__cards{
     position: relative;
+    
     .badge-nouveau{
         top: 1rem;
         right: 1rem;

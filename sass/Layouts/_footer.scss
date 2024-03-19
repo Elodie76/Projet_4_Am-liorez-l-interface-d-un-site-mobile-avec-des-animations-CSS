@@ -1,20 +1,45 @@
 // footer
 .page-footer{
-    //  position: absolute;
      bottom: 0;
      left: 0;
     width: 100%;
-    height: 200px;
     margin-bottom: 0;
     background-color: $bg-footer;
     padding: 20px;
+    @media (min-width: 1024px){
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: flex-end;
+        
+    }
     .page-footer__logo{
         color: $white-txt;
         font-family: $logo-and-title;     
         font-weight: 400;  
+        @media (min-width: 1024px){
+           margin: 40px 40px 10px 100px; 
+            
+        }
+        
+    }
+    ul{
+        @media (min-width: 1024px){
+            margin-bottom: 10px;
+            margin-left: 50px;
+            display: flex;
+            
+             
+         }
+        
+        
     }
     li{
         padding-bottom: 6px;
+        @media (min-width: 1024px){
+            padding-left: 15px;
+             
+         }
+        
     
     }
     a{
@@ -24,8 +49,20 @@
     }
     i{
         width: 25px;   
-    }    
+    }   
+    .page-footer__list1{
+        @media (min-width: 1024px){
+            display: flex;
+            order: 1;
+        }
+    } 
+    .page-footer__list2{
+        @media (min-width: 1024px){
+            display: flex;
+        }
+    } 
 }
+
 
 
     

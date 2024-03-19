@@ -1,5 +1,13 @@
 // Animation au survol, ajout d'un plat a la commande
 
+@keyframes coche{
+    from{
+        transform: translateX(60px);
+    }
+    to{transform: translateX();
+
+    }
+}
 .bloc-price-coche{
     display: flex;
     flex-direction: row;
@@ -16,7 +24,8 @@
         align-items: center;
         background-color: $color-tertiaire;
         border-radius: 0px 15px 15px 0px;
-        transform: scaleX(0);
+        // transform: scaleX(0);
+        transform: translateX(0);
         transition: transform 900ms;
         transform-origin: 100% 50%;
 

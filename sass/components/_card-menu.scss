@@ -17,6 +17,9 @@
         h4,p{
             margin-bottom: 5px;
             font-family: $text;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
            
             }
             

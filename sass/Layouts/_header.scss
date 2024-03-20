@@ -4,7 +4,10 @@ header{
     justify-content: center;
     position: relative;
     box-shadow: 0px 1px 5px rgb(195, 195, 195) ;
-    
+    @media (min-width: 1024px){
+        box-shadow: none;
+        
+    }
     .navbar{
         position: absolute;
         left: 0.25rem;

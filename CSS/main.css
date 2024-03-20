@@ -51,35 +51,19 @@ p {
   font-size: 1.125rem;
 }
 
-@keyframes coche {
-  from {
-    transform: translateX(60px);
-  }
-  to {
-    transform: translateX();
-  }
+.card-choice {
+  overflow: hidden;
 }
-.bloc-price-coche {
-  display: flex;
-  flex-direction: row;
-  transition: transform 330ms ease-in-out;
-}
-.bloc-price-coche .card-choice__price {
-  transform: translate(51px, 0);
-  transition: transform 900ms;
-}
-.bloc-price-coche .coche-plat {
+.card-choice__check {
   width: 59px;
+  margin-right: -59px;
+  background-color: #99E2D0;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #99E2D0;
   border-radius: 0px 15px 15px 0px;
-  transform: translateX(0);
-  transition: transform 900ms;
-  transform-origin: 100% 50%;
 }
-.bloc-price-coche .coche-plat i {
+.card-choice__check i {
   border-radius: 50%;
   background-color: white;
   color: #99E2D0;
@@ -87,11 +71,8 @@ p {
   font-size: 0.7rem;
 }
 
-.card-choice:hover > .bloc-price-coche > .coche-plat {
-  transform: scaleX(1);
-}
-.card-choice:hover > .bloc-price-coche > .card-choice__price {
-  transform: translate(0px, 0);
+.card-choice:hover .card-choice__check {
+  margin-right: 0;
 }
 
 @keyframes apparition {
@@ -176,7 +157,6 @@ p {
   background-color: rgb(255, 255, 255);
   border-radius: 15px;
   display: flex;
-  justify-content: space-between;
   width: 100%;
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
 }
@@ -185,7 +165,6 @@ p {
   overflow: hidden;
   text-overflow: ellipsis;
   width: 100%;
-  max-width: 80%;
   padding: 10px 0px 5px 16px;
 }
 .card-choice .card-choice__content h4, .card-choice .card-choice__content p {
@@ -200,6 +179,7 @@ p {
 }
 
 .card-choice__price {
+  margin-left: auto;
   display: flex;
   flex-direction: column-reverse;
   padding: 0px 10px 5px 0px;

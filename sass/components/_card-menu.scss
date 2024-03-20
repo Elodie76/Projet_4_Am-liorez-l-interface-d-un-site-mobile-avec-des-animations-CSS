@@ -3,7 +3,7 @@
     background-color: $bg-card;
     border-radius: 15px;
     display: flex;
-    justify-content: space-between;
+    // justify-content: space-between;
     width: 100%;
     
     // padding: 10px 16px 5px 16px;
@@ -13,11 +13,13 @@
         overflow: hidden;
         text-overflow: ellipsis;
         width: 100%;
-        max-width: 80%;
         padding: 10px 0px 5px 16px;
         h4,p{
             margin-bottom: 5px;
             font-family: $text;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
            
             }
             
@@ -33,6 +35,7 @@
         }
     
     .card-choice__price{
+        margin-left: auto;
         display: flex;
         flex-direction: column-reverse;
         padding: 0px 10px 5px 0px;

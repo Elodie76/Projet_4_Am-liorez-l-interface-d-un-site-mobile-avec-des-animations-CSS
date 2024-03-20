@@ -1,60 +1,31 @@
 // Animation au survol, ajout d'un plat a la commande
-
-@keyframes coche{
-    from{
-        transform: translateX(60px);
-    }
-    to{transform: translateX();
-
-    }
-}
-.bloc-price-coche{
-    display: flex;
-    flex-direction: row;
-    transition: transform 330ms ease-in-out;
-    .card-choice__price{
-    transform: translate(51px,0);
-    transition: transform 900ms;
-    }
-
-    .coche-plat{
-        width: 59px;
+.card-choice{
+    overflow: hidden;
+    &__check{
+        $check-width: 59px;
+        width: $check-width;
+        margin-right: -$check-width;
+        background-color: $color-tertiaire;
         display: flex;
         justify-content: center;
         align-items: center;
-        background-color: $color-tertiaire;
         border-radius: 0px 15px 15px 0px;
-        // transform: scaleX(0);
-        transform: translateX(0);
-        transition: transform 900ms;
-        transform-origin: 100% 50%;
-
-
+        transition: margin-right 0.5s;
     i{
-
         border-radius: 50%;
         background-color: white;
         color: $color-tertiaire;
         padding: 4px 4px 4px 4px;
         font-size: 0.7rem;
     }
-
-
 }
- }
+}
 .card-choice:hover{
-    & > .bloc-price-coche{
-       & > .coche-plat{
-        transform: scaleX(1);
-        
+       .card-choice__check{
+        margin-right: 0;
     } 
-        & > .card-choice__price{
-            transform: translate(0px,0)
-        }
     }
     
-}
-   
 // apparition des menus en décalé
 @keyframes apparition{
     100%{
@@ -67,7 +38,6 @@
     transform: translateY(-30px);
     animation: apparition 0.1s 0.8s ease-out forwards;
     }
-
 .meals{
     & > h3{
         opacity: 0;

@@ -1,0 +1,22 @@
+.loader{
+    position: fixed;
+    inset: 0;
+    background-color: white;
+    opacity: 0.9;
+    height: 100vh;
+    z-index: 1;
+    display: grid;
+    place-items: center;
+    animation: loader-disappear 0.8s 2s forwards;
+    transform-origin: top;
+    background-image: linear-gradient($color-primaire,$color-secondaire);
+}
+
+@keyframes loader-disappear{
+    0%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(0);
+    }
+}

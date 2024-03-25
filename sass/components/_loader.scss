@@ -1,22 +1,21 @@
 .loader{
     position: fixed;
-    inset: 0;
-    background-color: white;
-    opacity: 0.9;
-    height: 100vh;
-    z-index: 1;
-    display: grid;
-    place-items: center;
-    animation: loader-disappear 0.8s 2s forwards;
-    transform-origin: top;
-    background-image: linear-gradient($color-primaire,$color-secondaire);
+    inset: 0; //le lorader prend toute la surface de la page
+    opacity: 0.9; // un peu de transparence pour appercevoir le site derrière le loader et donner une impression de chargerment
+    height: 100vh; //le loader prend 100% de la hauteur de l'écran
+    z-index: 1; // le loader est par dessus la page et tous ses éléments
+    display: grid; // pour pouvoir centrer l'icone
+    place-items: center; //centre l'icone dans l'ecran
+    animation: loader-disappear 0.8s 2s forwards;  // durée de l'appararition du loader
+    transform-origin: top; // le loader disparait en haut de la page   point d'ancrage
+    background-image: linear-gradient($color-primaire,$color-secondaire); // reprise du dégardé des boutons de la maquette
 }
 
 @keyframes loader-disappear{
     0%{
-        transform: scale(1);
+        transform: scale(1); //le loader a sa taille maximale au début de l'animation
     }
     100%{
-        transform: scale(0);
+        transform: scale(0); // le loader a sa taille minimal a la fin de l'animation
     }
 }

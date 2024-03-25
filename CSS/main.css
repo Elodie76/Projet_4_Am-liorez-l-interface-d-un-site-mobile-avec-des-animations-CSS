@@ -115,10 +115,31 @@ p {
   animation: apparition 0.8s 2.3s ease-out forwards;
 }
 
+.fa-heart {
+  font-size: 22px;
+  position: absolute;
+}
+
+.card-content__heart {
+  margin-right: 10px;
+}
+.card-content__heart:hover > .heart-full {
+  transform: scale(1);
+}
+
+.heart-full {
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  margin-right: 10px;
+  background-image: linear-gradient(#9356DC, #FF79DA);
+  transform: scale(0);
+  transition: all 10s cubic-bezier(1, -0.09, 0, 1.09);
+}
+
 .loader {
   position: fixed;
   inset: 0;
-  background-color: white;
   opacity: 0.9;
   height: 100vh;
   z-index: 1;
@@ -253,30 +274,6 @@ p {
   width: 30px;
 }
 
-.fa-heart {
-  font-size: 22px;
-  position: absolute;
-}
-
-.heart-empty {
-  margin-right: 10px;
-}
-
-.heart-full {
-  opacity: 0;
-  color: transparent;
-  background-clip: text;
-  -webkit-background-clip: text;
-  margin-right: 10px;
-  background-image: linear-gradient(#9356DC, #FF79DA);
-}
-.heart-full:hover {
-  opacity: 1;
-}
-.heart-full:active {
-  opacity: 1;
-}
-
 header {
   width: 100%;
   display: flex;
@@ -347,7 +344,7 @@ header .navbar {
   justify-content: center;
   background-color: rgb(246, 246, 246);
   margin-top: 6px;
-  padding: 0px 30px 40px 30px;
+  padding: 30px 30px 40px 30px;
 }
 @media (min-width: 1024px) {
   .info .info__reserver {
@@ -373,6 +370,20 @@ header .navbar {
 }
 .info .info__reserver .info__reserver--marg {
   margin-bottom: 30px;
+}
+
+.tuto-nb {
+  position: absolute;
+  left: -15px;
+  background-color: #9356DC;
+  color: #ffffff;
+  -webkit-clip-path: circle();
+          clip-path: circle();
+  padding: 5px 10px;
+}
+
+.fa-solid--purple {
+  color: #9356DC;
 }
 
 .Fonctionnement {
@@ -562,6 +573,7 @@ header .navbar {
 }
 .main-container .menu-container .Restaurant-title h2, .main-container .menu-container .Restaurant-title .menu-title-heart {
   font-size: 1.75rem;
+  transition: all 2s;
 }
 .main-container .menu-container .Restaurant-title h2 {
   font-family: "Shrikhand", serif;

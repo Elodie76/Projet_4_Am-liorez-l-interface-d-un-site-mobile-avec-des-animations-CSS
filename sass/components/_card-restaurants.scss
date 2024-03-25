@@ -39,29 +39,6 @@
 }
 
 
-// heart animation
-.fa-heart{
-    font-size: 22px;
-    position: absolute;  
-}
 
-.heart-empty{
-    margin-right: 10px;
-}
-
-.heart-full{
-    opacity: 0;
-    color: transparent;
-    background-clip: text;
-    -webkit-background-clip: text;
-    margin-right: 10px;
-    background-image: linear-gradient($color-primaire,$color-secondaire);
-    &:hover{
-         opacity: 1;
-     }
-    &:active{
-        opacity: 1;
-    }
-}
 
     

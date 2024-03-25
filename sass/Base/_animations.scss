@@ -1,16 +1,17 @@
 // Animation au survol, ajout d'un plat a la commande
+
 .card-choice{
-    overflow: hidden;
+    overflow: hidden; //tout ce qui depasse est caché
     &__check{
         $check-width: 59px;
         width: $check-width;
-        margin-right: -$check-width;
+        margin-right: -$check-width; //décale l'item sur la droite ,de sa largeur
         background-color: $color-tertiaire;
         display: flex;
         justify-content: center;
         align-items: center;
         border-radius: 0px 15px 15px 0px;
-        transition: margin-right 0.5s;
+        transition: margin-right 0.5s; //s'appuit toujours sur le margin-right
     i{
         border-radius: 50%;
         background-color: white;
@@ -22,21 +23,23 @@
 }
 .card-choice:hover{
        .card-choice__check{
-        margin-right: 0;
+        margin-right: 0; // fait revenir l'item à sa position 0, enleve le margin right
     } 
     }
     
+
 // apparition des menus en décalé
+
 @keyframes apparition{
     100%{
-        opacity: 1;
-        transform: none;
+        opacity: 1; // a la fin de l'animation il n'y a plus d'opacité
+        transform: none; //stop l'animation, pas de retour ni de boucle
     }
 }
 .Restaurant-title > h2{
-    opacity: 0;
-    transform: translateY(-30px);
-    animation: apparition 0.1s 0.8s ease-out forwards;
+    opacity: 0; // titre invisible à t=0
+    transform: translateY(-30px); // titre plus haut de 30px a t=0
+    animation: apparition 0.1s 0.8s ease-out forwards;// ease out ralenti l'animation a la fin
     }
 .meals{
     & > h3{
@@ -67,3 +70,33 @@
         animation: apparition 0.8s 2.3s ease-out forwards;
     }
 }
+
+
+// heart animation
+
+.fa-heart{
+    font-size: 22px;
+    position: absolute;  // les deux coeurs se supperposent
+}
+
+.card-content__heart{
+    margin-right: 10px;
+    &:hover > .heart-full{
+        transform: scale(1); // le coeur prend ses valeurs maximales et apparait  au survol
+        
+    }
+
+}
+
+.heart-full{
+    color: transparent; // le coeur plein est caché
+    background-clip: text; // le dégardé du fond se limite au bord du coeur de ne dépasse pas
+     -webkit-background-clip: text; //prise en charge par safari et chrome
+    margin-right: 10px;
+    background-image: linear-gradient($color-primaire,$color-secondaire); // couleur du coeur au remplissage
+    transform: scale(0); // le coeur débute son remplissage à 0%
+    transition: all 10s cubic-bezier(1,-0.09,0,1.09); //le coeur se rempli en 2s et se vide à la meme vitesse si l'action est interrompue
+    
+
+}
+

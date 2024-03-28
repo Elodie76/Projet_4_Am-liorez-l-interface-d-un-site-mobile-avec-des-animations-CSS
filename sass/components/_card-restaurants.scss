@@ -31,6 +31,11 @@
     padding: 15px 15px 20px 15px;
     
     height: 30%;
+    .card-txt{
+        h3,p{
+            font-family: $text;
+        }
+    }
 }
 .card-content__heart{
     position: relative;    

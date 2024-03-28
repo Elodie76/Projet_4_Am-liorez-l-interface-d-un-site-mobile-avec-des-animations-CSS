@@ -95,7 +95,7 @@
     margin-right: 10px;
     background-image: linear-gradient($color-primaire,$color-secondaire); // couleur du coeur au remplissage
     transform: scale(0); // le coeur débute son remplissage à 0%
-    transition: all 10s cubic-bezier(1,-0.09,0,1.09); //le coeur se rempli en 2s et se vide à la meme vitesse si l'action est interrompue
+     transition: all 2s ; //le coeur se rempli en 2s et se vide à la meme vitesse si l'action est interrompue
     
 
 }
